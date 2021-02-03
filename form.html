@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <!-- bootstrap styling -->
+<link rel="stylesheet" href="bootstrap.css">
+<!--custom css -->
+<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <form class="col-md-8 main">
+      <h3 class="text-center">REGISTRATION</h3>
+      <label>First Name: </label><input type="text" maxlenght="16" minlenght="3" required class="form-control form-control-sm">
+      <label>Last Name: </label><input type="text" maxlenght="16" minlenght="3" required class="form-control form-control-sm">
+      <label>Father's Name: </label><input type="text" maxlenght="16" minlenght="3" required class="form-control form-control-sm">
+      <label>Mother's Name: </label><input type="text" maxlenght="16" minlenght="3" required class="form-control form-control-sm">
+      <label>Present Address: </label><input type="text" maxlenght="40" minlenght="5" required class="form-control form-control-sm">
+      <label>Permanent Address: </label><input type="text" maxlenght="40" minlenght="5" required class="form-control form-control-sm">
+      <label>Phone Number: </label><input type="number" maxlenght="11" minlenght="11" required placeholder="(+088)" class="form-control form-control-sm">
+      <div class="mt-3"><label>Guardian's Occupation:</label>
+      <select required class=' guard'>
+        <option selected>None</option>
+        <option >Worker</option>
+        <option >Driver</option>
+        <option> Business men</option>
+        <option >House Wife</option>
+        <option >others</option>
+      </select>
+      </div> 
+      <div class="my-3">
+        <span>Gender:</span><input type="radio" required name="gen" id="gen"><label for="gen" class="lab">Male <span></span></label>
+                             <input type="radio" required name="gen" id="gen2"><label for="gen2" class="lab2">Female<span></span></label>
+                             <input type="radio" required name="gen" id="gen3"><label for="gen3" class="lab3">Others<span></span></label>
+      </div>
+      <div class="mb-3">
+        <span>Group:</span><input type="radio" required name="group" id="rel"><label for="rel" class="group">Scince <span></span></label>
+                             <input type="radio" required name="group" id="rel2"><label for="rel2" class="group2">Business Studies<span></span></label>
+                             <input type="radio" required name="group" id="rel3"><label for="rel3" class="group3">Humanity<span></span></label>
+      </div>
+      <label>GPA:</label><input type="number" required maxlenght="4" minlenght="4" class="gpa"><br/><br/>
+      <input type="submit" class="btn btn-sm btn-primary" value="SUBMIT">
+      <input type="reset" class="btn btn-sm btn-primary" value="RESET">
+    </form>
+  </div>
+</div>
+</body>
+</html>

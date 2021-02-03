@@ -1,0 +1,125 @@
+body{
+  background:url("stone.jpg") center repeat-y;
+  background-size:cover;
+  height:100vh;
+  font-size: 14pt;
+  font-weight: 700;
+}
+.main{
+  background: rgba(0,0,0,0.4);
+  color:white;
+  border-radius:12px;
+  margin: 15px 0px;
+}
+.main h3{
+  background: purple;
+  border-radius:10px;
+  text-align: center;
+  padding:0px 0px 12px 0px;
+}
+#gen,#gen2,#gen3{
+display:none;
+    }
+  .lab,.lab2,.lab3{
+    margin-left: 20px;
+    position: relative;
+  }  
+.lab span,.lab2 span,.lab3 span{
+  height: 20px;
+  width: 20px;
+  border:3px solid #55efc4;
+  border-radius: 60px;
+  display: block;
+  position:absolute;
+  left:-21px;
+  top: 8px;
+}    
+.lab span::after,.lab2 span::after,.lab3 span::after{
+  content:"";
+  width:15px;
+  height:15px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px 5px blanchedalmond;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background:blue;
+  Z-index:-4;
+  transform: scale(0);
+  transition: all 200ms linear;
+}
+#gen:checked~.lab span::after{
+  transform: scale(1);
+}
+#gen2:checked~.lab2 span::after{
+  transform: scale(1);
+}
+#gen3:checked~.lab3 span::after{
+  transform: scale(1);
+}
+/*group radio styling */
+#rel,#rel2,#rel3{
+  display: none;
+}
+.group,.group2,.group3{
+  position: relative;
+  margin-left: 20px;
+}
+.group span,.group2 span,.group3 span{
+  height: 20px;
+  width: 20px;
+  border:3px solid #55efc4;
+  border-radius: 60px;
+  display: block;
+  position:absolute;
+  left:-22px;
+  top: 9px;
+}
+.group span::after,.group2 span::after,.group3 span::after{
+  content:"";
+  width:15px;
+  height:15px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px 5px blanchedalmond;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background:blue;
+  Z-index:-4;
+  transform: scale(0);
+  transition: all 200ms linear;
+}
+#rel:checked~.group span::after{
+transform: scale(1);  
+}
+#rel2:checked~.group2 span::after{
+transform: scale(1);  
+}
+#rel3:checked~.group3 span::after{
+transform: scale(1);  
+}
+/* guarian occupation site */
+.guard{
+  color: white;
+  background: purple;
+  border-radius: 50px;
+  outline: none;
+}
+/* gpa site styling */
+.gpa{
+  width: 150px;
+  color: white;
+  background: purple;
+  border-radius: 50px;
+  padding:7px;
+  outline: none;
+  height: 40px;
+}
+@media screen and (max-width:600px){
+  .main h3{
+    margin:0px -15px;
+  }
+  .group,.group2,.group3{
+    margin-left: 15px;
+  }
+} 
