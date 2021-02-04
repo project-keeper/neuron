@@ -4,6 +4,6 @@ scroll.addEventListener('click',function(){
 });
 
 AOS.init({
-  offset: 345,
-  duration: 1350
+  offset: 300,
+  duration: 1390
 });
