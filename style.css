@@ -38,7 +38,7 @@ button[type="submit"]{
   box-shadow: 1px 1px 15px #321;
 }
 /* card part */
-#leaders,#students,#news,#campain,#about,#cnt{
+#leaders,#students,#news,#campain,#about,#cnt,#groth{
   margin: 10px auto 0px auto;
   padding: 0px 0px 10px 0px;
   position: relative;
@@ -141,13 +141,7 @@ button[type="submit"]{
   margin: auto;
 }
 /* groth rate */
-  #groth {
-    margin: -45px auto 0px auto;
-    color: white;
-    padding: 0px 0px 10px 0px;
-    position: relative;
-    width: fit-content;
-  }
+
 #bg-img{
   background: url("graph.jpg") center no-repeat;
   background-size: cover;
