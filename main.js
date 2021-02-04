@@ -5,5 +5,5 @@ scroll.addEventListener('click',function(){
 
 AOS.init({
   offset: 300,
-  duration: 1390
+  duration: 5000
 });
