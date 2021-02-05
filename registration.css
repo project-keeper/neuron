@@ -32,7 +32,7 @@ display:none;
   display: block;
   position:absolute;
   left:-21px;
-  top: 8px;
+  top: 3px;
 }    
 .lab span::after,.lab2 span::after,.lab3 span::after{
   content:"";
@@ -63,7 +63,7 @@ display:none;
 }
 .group,.group2,.group3{
   position: relative;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .group span,.group2 span,.group3 span{
   height: 20px;
@@ -73,7 +73,7 @@ display:none;
   display: block;
   position:absolute;
   left:-22px;
-  top: 9px;
+  top: 3px;
 }
 .group span::after,.group2 span::after,.group3 span::after{
   content:"";
