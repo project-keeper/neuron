@@ -48,13 +48,6 @@ button[type="submit"]{
   width: fit-content;
   color: white;
 }
-#groth{
-  margin: -55px auto 5px auto;
-  padding: 0px 0px 10px 0px;
-  position: relative;
-  width: fit-content;
-  color: white;
-}
 #leaders::after,#students::after,#news::after,#campain::after,#about::after,#cnt::after,#groth::after{
   content:"";
   position: absolute;
@@ -130,10 +123,9 @@ button[type="submit"]{
 #overlay{
   position: absolute;
   background: #8215C8CF;
-  height: inherit;
+  height: 100%;
   width: 100%;
   z-index: -3;
-  transform: translateY(-800px);
 }
 #about-item{
   position: absolute;
@@ -143,7 +135,6 @@ button[type="submit"]{
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
-  transform: translateY(-800px);
 }
 #about-item h5{
   text-align: center;
@@ -246,28 +237,60 @@ button[type="submit"]{
   box-shadow: 7px 7px 17px black;
 }
 
-/* media query part */
 /* about us part */
-@media screen and (min-width: 576px){
+@media screen and (max-width: 575px){
   #overlay{
-    height: 130%;
+    height: 58%;
+    transform: translateY(-420px);
+  }
+  #about-item{
+    transform: translateY(-520px);
+  }
+  #groth{
+    margin-top: -50px;
+  }
+}
+/*about part small screen*/
+@media screen and (min-width: 575px){
+  #overlay{
+    height: 133%;
     transform: translateY(-460px);
   }
-@media screen and (min-width:768px){
- #overlay{
-  height: 100%;
-  transform: translateY(-500px);
- }
- #about-item{
-   transform: translateY(-700px);
- }
-}
   #about-item{
-    transform: translateY(-400px);
+    transform: translateY(-420px);
+  }
+  #groth{
+    margin-top: -63px;
+  }
+}
+/* about part middle screen*/
+@media screen and (min-width: 768px){
+  #overlay{
+    height: 100%;
+    transform: translateY(0px);
+  }
+  #about-item{
+    transform: translateY(0px);
+  }
+  #groth{
+    margin-top: 0px;
+  }
+}
+/*about part large part*/
+@media screen and (min-width: 992px){
+  #overlay{
+    height: 100%;
+    transform: translateY(0px);
+  }
+  #about-item{
+    transform: translateY(0px);
+  }
+  #groth{
+    margin-top: 0px;
   }
 }
 /* contact us part */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 567px){
   .box{
     flex-direction: column;
     align-items: center;
@@ -276,20 +299,10 @@ button[type="submit"]{
     text-align: center;
   }
   #about-v{
-    transform: translate(-23%,-50px);
+    transform: translate(-20%,-50px);
   }
-  #overlay{
-    height: 57%;
-    transform: translateY(-418px);
   }
-  #about-item{
-    transform: translateY(-550px);
-  }
-}
 @media screen and (min-width: 1150px){
-  #overlay{
-    transform: translateY(-784px);
-  }
   .widget div em{
     display: block;
     margin-top: 16px;
@@ -297,9 +310,4 @@ button[type="submit"]{
     #groth {
       margin-top: 20px;
     }
-}
-@media screen and (max-width: 1150px){
- #bg-img{
-   margin-top: 23px;
- }
 }
